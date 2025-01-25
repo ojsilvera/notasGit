@@ -120,22 +120,20 @@ Conocer estos términos es clave para comprender Git:
 
     `
     git config --global user.email "<USER_EMAIL>"
-
     `
 
 6. Ejecute el siguiente comando para verificar que sus cambios funcionaron:
 
     `
     git config --list
-
     `
 
 7. Confirme que la salida incluye dos líneas que son similares al siguiente ejemplo. Su nombre y dirección de correo electrónico serán diferentes a los que se muestran en el ejemplo.
 
-`
-user.name=User Name
-user.email=user-name@contoso.com
-`
+    `
+    user.name=User Name
+    user.email=user-name@contoso.com
+    `
 
 ## **Configura tu repositorio Git**
 
@@ -151,33 +149,31 @@ Comience creando una carpeta vacía para su proyecto y luego inicialice un repos
 
     `
     mkdir Cats
-
     `
 
 2. Cambie al directorio del proyecto usando el `cd`comando:
 
     `
     cd Cats
-
     `
 
 3. Ahora, inicialice su nuevo repositorio y establezca el nombre de la rama predeterminada en `main`:
 
-Si está ejecutando Git versión 2.28.0 o posterior, use los siguientes comandos:
+    Si está ejecutando Git versión 2.28.0 o posterior, use los siguientes comandos:
 
     `
     git init --initial-branch=main
     git init -b main
     `
 
-Para versiones anteriores de Git, use estos comandos:
+    Para versiones anteriores de Git, use estos comandos:
 
     `
     git init
     git checkout -b main
     `
 
-Después de ejecutar el comando de inicialización, debería ver un resultado similar a este ejemplo:
+    Después de ejecutar el comando de inicialización, debería ver un resultado similar a este ejemplo:
 
     `
     Initialized empty Git repository in /home/<user>/Cats/.git/
@@ -188,25 +184,23 @@ Después de ejecutar el comando de inicialización, debería ver un resultado si
 
     `
     git status
-
     `
 
-    Git responde con esta salida, lo que indica que `master`es la rama actual. (También es la única sucursal). Hast
+    Git responde con esta salida, lo que indica que `master`es la rama actual. (También es la única sucursal). Hasta
     ahora, muy bien.
 
     Respuesta
 
-        `
-        On branch master
-        No commits yet
-        nothing to commit (create/copy files and use "git add" to track)
-        `
+    `
+    On branch master
+    No commits yet
+    nothing to commit (create/copy files and use "git add" to track)
+    `
 
 5. Use un `ls`comando para mostrar el contenido del árbol de trabajo:
 
     `
     ls -a
-
     `
 
 Confirme que el directorio contiene un subdirectorio llamado *.git* . (Usar la `-a`opción con `ls`es importante porque
