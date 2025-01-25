@@ -17,13 +17,16 @@ Al iniciar el día de trabajo ejecutamos para tener la ultima version del codigo
 ``
 git status(muesta la branch en la qu estamos trabajando y si hay archivos modificados para subir o por comitear)
 ``
+
 ``
 git add -A (agrega los archivos pendientes para hacerles commit y enviarlos a github)
 ``
+
 ``
 git commit -m "un mensaje descriptivo de los cambios realizados"(anexar los archivos del stage(que fueron modificados y
 estan pendientes por enviar) un mensaje q permite saber lo que fue modificado)
 ``
+
 ``
 git push -u origin ramaDestino (envia los archivos modificados al repo de github publicando la rama origen en el repo de github)
 ``
@@ -52,7 +55,7 @@ git commit -m “el mensaje”
 
 git push origin ramaDeTrabajo (mueve los datos del origen a la rama de trabajo en remoto publicandola)
 
-git push -u origin <branch> (mueve los archivos de origin a la branch seleccionada y la siguiente vez solo haces git push y toma la info almacenada inicialmente)
+git push -u origin `<branch>` (mueve los archivos de origin a la branch seleccionada y la siguiente vez solo haces git push y toma la info almacenada inicialmente)
 
 git checkout master(cambiamos a la rama principal)
 
